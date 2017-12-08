@@ -1,0 +1,4 @@
+framework module SmileToUnlock {
+    header "SmileToUnlock-Swift.h"
+    requires objc
+}

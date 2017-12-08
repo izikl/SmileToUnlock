@@ -12,8 +12,9 @@
 		440C6B651FD2DD0600411264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440C6B631FD2DD0600411264 /* Main.storyboard */; };
 		440C6B671FD2DD0600411264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440C6B661FD2DD0600411264 /* Assets.xcassets */; };
 		440C6B6A1FD2DD0600411264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440C6B681FD2DD0600411264 /* LaunchScreen.storyboard */; };
-		443823131FD2E39D00A20EE5 /* SmileToUnlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440C6B761FD2DD1E00411264 /* SmileToUnlock.framework */; };
 		443823141FD2E39D00A20EE5 /* SmileToUnlock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 440C6B761FD2DD1E00411264 /* SmileToUnlock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D5B6A881FDB5B6200BFC7F8 /* SmileToUnlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5B6A871FDB5B6200BFC7F8 /* SmileToUnlock.framework */; };
+		8D8BBF7C1FDB5B2B0048C3E7 /* Frameworks in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BBF7B1FDB5B2B0048C3E7 /* Frameworks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		440C6B691FD2DD0600411264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		440C6B6B1FD2DD0600411264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		440C6B711FD2DD1E00411264 /* SmileToUnlock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SmileToUnlock.xcodeproj; path = ../SmileToUnlock.xcodeproj; sourceTree = "<group>"; };
+		8D5B6A871FDB5B6200BFC7F8 /* SmileToUnlock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SmileToUnlock.framework; path = Frameworks/SmileToUnlock.framework; sourceTree = "<group>"; };
+		8D8BBF7B1FDB5B2B0048C3E7 /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Frameworks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443823131FD2E39D00A20EE5 /* SmileToUnlock.framework in Frameworks */,
+				8D5B6A881FDB5B6200BFC7F8 /* SmileToUnlock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +76,11 @@
 		440C6B531FD2DD0600411264 = {
 			isa = PBXGroup;
 			children = (
+				8D5B6A871FDB5B6200BFC7F8 /* SmileToUnlock.framework */,
 				440C6B711FD2DD1E00411264 /* SmileToUnlock.xcodeproj */,
 				440C6B5E1FD2DD0600411264 /* SmileToUnlockExample */,
 				440C6B5D1FD2DD0600411264 /* Products */,
+				8D8BBF7B1FDB5B2B0048C3E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +193,7 @@
 				440C6B6A1FD2DD0600411264 /* LaunchScreen.storyboard in Resources */,
 				440C6B671FD2DD0600411264 /* Assets.xcassets in Resources */,
 				440C6B651FD2DD0600411264 /* Main.storyboard in Resources */,
+				8D8BBF7C1FDB5B2B0048C3E7 /* Frameworks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +355,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = L47QS6HV2U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SmileToUnlockExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = izikl.SmileToUnlock;
@@ -368,6 +379,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = L47QS6HV2U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SmileToUnlockExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = izikl.SmileToUnlock;
