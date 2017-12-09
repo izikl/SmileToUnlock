@@ -12,8 +12,7 @@
 		440C6B651FD2DD0600411264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440C6B631FD2DD0600411264 /* Main.storyboard */; };
 		440C6B671FD2DD0600411264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440C6B661FD2DD0600411264 /* Assets.xcassets */; };
 		440C6B6A1FD2DD0600411264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440C6B681FD2DD0600411264 /* LaunchScreen.storyboard */; };
-		8D5B6A881FDB5B6200BFC7F8 /* SmileToUnlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5B6A871FDB5B6200BFC7F8 /* SmileToUnlock.framework */; };
-		8D8BBF7C1FDB5B2B0048C3E7 /* Frameworks in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BBF7B1FDB5B2B0048C3E7 /* Frameworks */; };
+		8D01C8AC1FDB5DF5007B3D91 /* SmileToUnlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D01C8A91FDB5D87007B3D91 /* SmileToUnlock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,8 +36,7 @@
 		440C6B661FD2DD0600411264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		440C6B691FD2DD0600411264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		440C6B6B1FD2DD0600411264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D5B6A871FDB5B6200BFC7F8 /* SmileToUnlock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SmileToUnlock.framework; path = Frameworks/SmileToUnlock.framework; sourceTree = "<group>"; };
-		8D8BBF7B1FDB5B2B0048C3E7 /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Frameworks; sourceTree = "<group>"; };
+		8D01C8A91FDB5D87007B3D91 /* SmileToUnlock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmileToUnlock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5B6A881FDB5B6200BFC7F8 /* SmileToUnlock.framework in Frameworks */,
+				8D01C8AC1FDB5DF5007B3D91 /* SmileToUnlock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +54,9 @@
 		440C6B531FD2DD0600411264 = {
 			isa = PBXGroup;
 			children = (
-				8D5B6A871FDB5B6200BFC7F8 /* SmileToUnlock.framework */,
 				440C6B5E1FD2DD0600411264 /* SmileToUnlockExample */,
 				440C6B5D1FD2DD0600411264 /* Products */,
-				8D8BBF7B1FDB5B2B0048C3E7 /* Frameworks */,
+				8D01C8AA1FDB5DC8007B3D91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +79,14 @@
 				440C6B6B1FD2DD0600411264 /* Info.plist */,
 			);
 			path = SmileToUnlockExample;
+			sourceTree = "<group>";
+		};
+		8D01C8AA1FDB5DC8007B3D91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D01C8A91FDB5D87007B3D91 /* SmileToUnlock.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +152,6 @@
 				440C6B6A1FD2DD0600411264 /* LaunchScreen.storyboard in Resources */,
 				440C6B671FD2DD0600411264 /* Assets.xcassets in Resources */,
 				440C6B651FD2DD0600411264 /* Main.storyboard in Resources */,
-				8D8BBF7C1FDB5B2B0048C3E7 /* Frameworks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +221,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -274,6 +279,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -288,7 +294,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
